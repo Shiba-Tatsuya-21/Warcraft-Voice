@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/sons_humains">
+
+    <fragment
+        android:id="@+id/sons_humains"
+        android:name="fr.pisano.warcraftvoice.ui.orcs.OrcsFragment"
+        android:label="@string/sons_humains"
+        tools:layout="@layout/fragment_orcs" />
+
+    <fragment
+        android:id="@+id/sons_orcs"
+        android:name="fr.pisano.warcraftvoice.ui.humains.HumainsFragment"
+        android:label="@string/sons_orcs"
+        tools:layout="@layout/fragment_humains" />
+
+    <fragment
+        android:id="@+id/site_internet"
+        android:name="fr.pisano.warcraftvoice.ui.internet.InternetFragment"
+        android:label="@string/site_internet"
+        tools:layout="@layout/fragment_internet" />
+
+</navigation>
